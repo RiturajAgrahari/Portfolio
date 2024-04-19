@@ -1,0 +1,122 @@
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: #181818;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    padding: 10px 0;
+    color: rgb(77, 188, 188);
+}
+
+.navbar .logo {
+    font-size: 32px;
+    margin-left: 30px;
+}
+
+.navbar .nav-links {
+    /* border: 1px solid cyan; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: rgb(189, 185, 185);
+    list-style-type: none;
+}
+
+.navbar .nav-links li {
+    /* border: 1px solid red; */
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 2%;
+    cursor: pointer;
+}
+
+.active, .navbar .nav-links li:hover{
+    color: rgb(77, 188, 188);
+}
+
+.active::before,
+.navbar .nav-links li::before {
+    position: absolute;
+    content: " ";
+    top: 50%;
+    left: 20%;
+    width: 60%;
+    background-color: rgba(77, 188, 188, 0.5);
+    border-radius: 50px;
+    border-radius: 50px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.active::before{
+    box-shadow: 0 0 5px 5px rgba(77, 188, 188, 0.5);
+}
+
+.navbar .nav-links li:hover::before {
+    box-shadow: 0 0 5px 5px rgba(77, 188, 188, 0.5);
+}
+
+.navbar .nav-links li::after {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(77, 188, 188);
+    border-radius: 20px;
+    transition: width .2s ease-in;
+}
+
+.navbar .nav-links li:hover::after{
+    width: 100%;
+}  
+
+.active {
+    color: rgb(77, 188, 188);
+}
+
+.navbar .social-media {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar .social-media a {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .social-media a svg{
+    fill: white;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navbar .social-media a .bi-linkedin:hover {
+    fill: #0077B5;
+} 
