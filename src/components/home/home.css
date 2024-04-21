@@ -1,12 +1,11 @@
 #home {
-    margin-top: 10vh;
     color: rgb(77, 188, 188);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: center; */
+    /* scroll-snap-stop: always; */
 }
 
 .intro {

@@ -1,0 +1,53 @@
+#Skills {
+    color: rgb(77, 188, 188);
+    margin: 0 10%;
+    padding-top: 100px;
+}
+
+.skills .section-heading {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .section-heading div {
+    margin: 10px;
+}
+
+.skills .section-heading .fl {
+    flex: auto;
+    height: 3px;
+    background-color: rgb(77, 188, 188);
+    border-radius: 0;
+}
+
+.skills .skills-data {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills .skills-data .divide-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .skills-data h1 {
+    text-align: center;
+}
+
+.skills .skills-data .divide-three div {
+    border: 1px solid gray;
+    background-color: rgb(43, 40, 40);
+    padding: 20px;
+    margin: 10px;
+}
+
+.skills .skills-data .divide-three  img {
+    width: 70px;
+    margin: 10px;
+}
