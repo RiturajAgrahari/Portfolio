@@ -21,8 +21,8 @@ const Navbar = () => {
                 <div className="nav-links">
                     <li className={activeLink === 0 ? 'active' : ''} onClick={() => {HandleClick(0,"home")}}>Home</li>
                     <li className={activeLink === 1 ? 'active' : ''} onClick={() => {HandleClick(1,"Skills")}}>Skills</li>
-                    <li className={activeLink === 2 ? 'active' : ''} onClick={() => {HandleClick(2,"Projects")}}>Experience</li>
-                    <li className={activeLink === 3 ? 'active' : ''} onClick={() => {HandleClick(3,"Projects")}}>Review</li>
+                    <li className={activeLink === 2 ? 'active' : ''} onClick={() => {HandleClick(2,"Experience")}}>Experience</li>
+                    <li className={activeLink === 3 ? 'active' : ''} onClick={() => {HandleClick(3,"Projects")}}>Projects</li>
                     <li className={activeLink === 4 ? 'active' : ''} onClick={() => {HandleClick(4,"Projects")}}>Service</li>
                     <li className={activeLink === 5 ? 'active' : ''} onClick={() => {HandleClick(5,"Projects")}}>Contact</li>
                 </div>

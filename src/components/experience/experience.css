@@ -1,0 +1,94 @@
+#Experience {
+    color: rgb(77, 188, 188);
+    margin: 0 10%;
+    padding-top: 150px;
+}
+
+.experience .section-heading {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience .section-heading div {
+    margin: 10px;
+}
+
+.experience .section-heading .fl {
+    flex: auto;
+    height: 3px;
+    background-color: rgb(77, 188, 188);
+    border-radius: 0;
+}
+
+.experience .work-experience {
+    margin-top: 50px;
+    height: 100vh;
+}
+
+.experience .work-experience::before {
+    content: " ";
+    position: absolute;
+    left: 49%;
+    width: 3px;
+    height: 100%;
+    background-color: rgb(77, 188, 188);
+} 
+
+.experience .work-experience .work {
+    position: relative;
+    /* border: 1px solid wheat; */
+    display: flex;
+}
+
+.experience .work-experience .work p{
+    color: gray;
+}
+
+.experience .work-experience .work ul{
+    list-style-type: disc;
+    padding: 0 30px;
+}
+
+.experience .work-experience .work ul li::marker{
+    color: rgb(77, 188, 188);
+    font-size: 20px;
+}
+
+.experience .work-experience .work img {
+    position: absolute;
+    left: 46%;
+    top: 35%;
+    border: 4px solid rgb(77, 188, 188);
+    background-color: #181818;
+    border-radius: 50px;
+    padding: 5px;
+    width: 50px;
+} 
+
+.experience .work-experience .work .work-details{
+    position: relative;
+    margin-top: 70px;
+    border: 1px solid white;
+    width: 40%;
+    padding: 20px;
+}
+
+.experience .work-experience .work .work-details::after{
+    position: absolute;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    right: -10px;
+    top: 62px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.experience .work-experience .work .work-time {
+    /* border: 1px solid green; */
+    margin-top: 127px;
+    margin-left: 110px;
+}

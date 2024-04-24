@@ -53,14 +53,15 @@
     position: relative;
     cursor: pointer;
     border: none;
-    border-radius: 50px;
     font-size: 24px;
+    border: 2px solid rgb(77, 188, 188);
+    color: rgb(77, 188, 188);
     font-weight: 600;
     padding: 15px 30px;
-    width: 30%;
+    width: 40%;
     margin-left: 50px;
     margin-top: 30px;
-    background-color: rgba(77, 188, 188, 1);
+    background-color: rgba(77, 188, 188, 0);
     outline: none;
     backdrop-filter: blur(10px);
     transition: 0.3s;
