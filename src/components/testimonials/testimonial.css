@@ -1,0 +1,120 @@
+#Testimonial {
+    color: rgb(77, 188, 188);
+    margin: 0 10%;
+    padding-top: 100px;
+    color: white;
+}
+
+.testimonial .section-heading {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(77, 188, 188);
+}
+
+.testimonial .section-heading div {
+    margin: 10px;
+}
+
+.testimonial .section-heading .fl {
+    flex: auto;
+    height: 3px;
+    background-color: rgb(77, 188, 188);
+    border-radius: 0;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.testimonials .review {
+    border: 1px solid white;
+    margin: 4rem 20px;
+    width: calc(100%/3 - 20px);
+    border-color: rgb(77, 188, 188);
+    height: 350px;
+    transition: 0.3s;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .review > p{
+    font-size: 48px;
+    width: 100%;
+}
+
+.testimonials .review .review-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.testimonials .review .review-content .review-text-content{
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials .review:hover {
+    transform: translateY(-10px);
+}
+
+.testimonials .review .review-content .review-user {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials .review .review-content .review-user span {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.testimonials .review .review-content .review-user span div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials .review .review-content .review-user span img {
+    object-fit: contain;
+    box-sizing: border-box;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.testimonials .review .review-content .review-user .review-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials .review .review-content .review-user .review-user-info .review-user-name {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials .review .review-content .review-user .review-user-info .review-user-name svg {
+    fill: rgb(77, 188, 188);
+    vertical-align: middle;
+    padding: 3px;
+}
+
+.testimonials .review .review-content .review-user .review-user-info .review-user-post {
+    color: gray;
+    padding-left: 5px;
+    font-size: 15px;
+}
