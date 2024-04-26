@@ -1,3 +1,5 @@
+/* DEFAULT CSSS */
+
 ul {
     list-style-type: none;
 }
@@ -5,6 +7,8 @@ ul {
 body {
     background-color: #181818;
 }
+
+/* NAVBAR CSS */
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.5);
@@ -18,19 +22,21 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
     z-index: 100;
     padding: 10px 0;
     color: rgb(77, 188, 188);
 }
+
+/* NAVBAR - LOGO */
 
 .navbar .logo {
     font-size: 32px;
     margin-left: 30px;
 }
 
+/* NAVBAR - LINKS */
+
 .navbar .nav-links {
-    /* border: 1px solid cyan; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +46,6 @@ body {
 }
 
 .navbar .nav-links li {
-    /* border: 1px solid red; */
     position: relative;
     font-size: 18px;
     padding: 10px;
@@ -94,11 +99,13 @@ body {
     color: rgb(77, 188, 188);
 }
 
+/* NAVBAR - SOCIAL MEDIA */
+
 .navbar .social-media {
     margin-right: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0;
 }
 
@@ -120,3 +127,93 @@ body {
 .navbar .social-media a .bi-linkedin:hover {
     fill: #0077B5;
 } 
+
+.btn {
+    width: 42px;
+    height: 50px;
+    background: transparent;
+    padding: 0 1rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.lines,.lines::after,.lines::before {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transition: all 0.3s;
+}
+.lines::before{
+    content: '';
+    top: -11px;
+    left: 0;
+}
+.lines::after{
+    content: '';
+    top: 11px;
+    left: 0;
+}  
+
+.target::after{
+    transform: translateY(-11px) rotate(-45deg) scaleX(1);
+}
+
+.target::before{
+    transform: translateY(11px) rotate(45deg) scaleX(1);
+}
+
+.target{
+    transform: rotate(-180deg);
+    background: transparent;
+}
+
+.sidebar {
+    position: fixed;
+    width: 100%;
+    top: 70px;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+}
+
+.sidebar ul {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar ul li {
+    cursor: pointer;
+    font-size: 32px;
+    padding: 10px;
+    margin: 0 20px;
+    border-bottom: 1px solid rgb(77, 188, 188);
+}
+
+.sidebar ul li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+    .btn {
+        display: flex;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar .social-media {
+        margin-right: 0;
+    }
+    .btn {
+        padding-left: 0;
+    }
+}
