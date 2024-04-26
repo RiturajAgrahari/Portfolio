@@ -114,7 +114,6 @@
 }
 
 .experience .work-experience .work:nth-child(even) .work-details .arrow{
-    top: 24px;
     right: 100%;
     transform: rotate(0);
 }
@@ -141,6 +140,7 @@
     list-style-type: disc;
     margin-top: 1.25rem;
     margin-left: 1.25rem;
+    padding-left: 0;
 }
 
 .experience .work-experience .work .work-details > ul > li{
@@ -163,6 +163,7 @@
     padding: 0.8rem 0;
     opacity: 0.7;
     font-weight: 500;
+    top: 6px;
 }
 
 .experience .work-experience .work:nth-child(odd) .work-details > span{
@@ -175,4 +176,66 @@
     right: 124%;
     top: 6px;
     text-align: right;
+}
+
+@media (max-width: 1200px) {
+    .experience .work-experience::before {
+        left: 18px;
+        margin-left: 0;
+    } 
+
+
+    .experience .work-experience .work {
+        margin: 4rem 0;
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .experience .work-experience .work:nth-child(even) {
+        justify-content: flex-start;
+    }
+    
+    .experience .work-experience .work > span {
+        left: 0;
+        width: 40px;
+        height: 40px;
+        margin-left: 0;
+    }
+    
+    .experience .work-experience .work .work-details {
+        padding: 1rem;
+        margin-left: 60px;
+        width: 100%;
+    }
+    
+    .experience .work-experience .work .work-details .arrow{
+        top: 15px;
+        position: absolute;
+    }
+
+    .experience .work-experience .work:nth-child(odd) .work-details .arrow{
+        left: -13px;
+        transform: rotate(0);
+    }
+    
+    .experience .work-experience .work:nth-child(even) .work-details .arrow{
+        right: 100%;
+        transform: rotate(0);
+    }
+    
+    .experience .work-experience .work .work-details > span{
+        position: relative;
+    }
+    
+    .experience .work-experience .work:nth-child(odd) .work-details > span{
+        left: 0;
+        float: none;
+    }
+    
+    .experience .work-experience .work:nth-child(even) .work-details > span{
+        left: 0;
+        float: none;
+    }
 }
