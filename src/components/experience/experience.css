@@ -1,7 +1,8 @@
 #Experience {
     color: rgb(77, 188, 188);
     margin: 0 10%;
-    padding-top: 150px;
+    padding-top: 100px;
+    color: white;
 }
 
 .experience .section-heading {
@@ -9,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(77, 188, 188);
 }
 
 .experience .section-heading div {
@@ -23,72 +25,154 @@
 }
 
 .experience .work-experience {
+    position: relative;
     margin-top: 50px;
-    height: 100vh;
+    padding: 0.1rem 0;
 }
 
 .experience .work-experience::before {
-    content: " ";
+    content: "";
     position: absolute;
-    left: 49%;
-    width: 3px;
+    left: 50%;
+    top: 0;
+    margin-left: -2px;
+    width: 4px;
     height: 100%;
     background-color: rgb(77, 188, 188);
 } 
 
 .experience .work-experience .work {
+    margin: 4rem 0;
     position: relative;
-    /* border: 1px solid wheat; */
+    box-sizing: border-box;
     display: flex;
 }
 
-.experience .work-experience .work p{
-    color: gray;
+.experience .work-experience .work:nth-child(odd) {
+    justify-content: flex-start;
 }
 
-.experience .work-experience .work ul{
+.experience .work-experience .work:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.experience .work-experience .work > span {
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: rgb(56, 62, 86);
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    border: 4px solid rgb(77, 188, 188);
+}
+
+.experience .work-experience .work > span > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.experience .work-experience .work span div img {
+    object-fit: contain;
+    width: 60%;
+    height: 60%;
+    box-sizing: border-box;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.experience .work-experience .work .work-details {
+    background-color: rgb(63, 86, 86);
+    padding: 1.5rem;
+    width: 44%;
+    position: relative;
+    border-radius: 0.25rem;
+    box-shadow: 0 3px #ddd;
+    box-sizing: border-box;
+}
+
+.experience .work-experience .work .work-details .arrow{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    box-sizing: border-box;
+    border-right: 7px solid rgb(63, 86, 86);
+    top: 24px;
+}
+
+.experience .work-experience .work:nth-child(odd) .work-details .arrow{
+    left: 100%;
+    transform: rotate(180deg);
+}
+
+.experience .work-experience .work:nth-child(even) .work-details .arrow{
+    top: 24px;
+    right: 100%;
+    transform: rotate(0);
+}
+
+.experience .work-experience .work .work-details .work-header {
+    box-sizing: border-box;
+}
+
+.experience .work-experience .work .work-details .work-header > h3{
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.experience .work-experience .work .work-details .work-header > p{
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.experience .work-experience .work .work-details > ul{
+    box-sizing: border-box;
     list-style-type: disc;
-    padding: 0 30px;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
 }
 
-.experience .work-experience .work ul li::marker{
+.experience .work-experience .work .work-details > ul > li{
+    box-sizing: border-box;
+    letter-spacing: .05rem;
+    font-size: 14px;
+    padding-left: 0.25rem;
+}
+
+::marker{
     color: rgb(77, 188, 188);
     font-size: 20px;
 }
 
-.experience .work-experience .work img {
+.experience .work-experience .work .work-details > span{
+    box-sizing: border-box;
     position: absolute;
-    left: 46%;
-    top: 35%;
-    border: 4px solid rgb(77, 188, 188);
-    background-color: #181818;
-    border-radius: 50px;
-    padding: 5px;
-    width: 50px;
-} 
-
-.experience .work-experience .work .work-details{
-    position: relative;
-    margin-top: 70px;
-    border: 1px solid white;
-    width: 40%;
-    padding: 20px;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 0;
+    opacity: 0.7;
+    font-weight: 500;
 }
 
-.experience .work-experience .work .work-details::after{
-    position: absolute;
-    content: " ";
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    right: -10px;
-    top: 62px;
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%;
+.experience .work-experience .work:nth-child(odd) .work-details > span{
+    left: 124%;
+    top: 6px;
+    float: left;
 }
 
-.experience .work-experience .work .work-time {
-    /* border: 1px solid green; */
-    margin-top: 127px;
-    margin-left: 110px;
+.experience .work-experience .work:nth-child(even) .work-details > span{
+    right: 124%;
+    top: 6px;
+    text-align: right;
 }
