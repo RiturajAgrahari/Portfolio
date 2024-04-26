@@ -4,14 +4,21 @@
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
+    position: relative;
     /* scroll-snap-align: center; */
     /* scroll-snap-stop: always; */
+}
+
+#home > svg {
+    position: absolute;
+    width: 40%;
+    right: 50px;
 }
 
 .intro {
     position: relative;
     margin-left: 10%;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,5 +76,70 @@
 
 .intro button:hover{
     box-shadow: 0 0 5px 5px rgba(77, 188, 188, 0.5);
+}
 
+@media (max-width: 1300px) {
+    .intro {
+        width: 50%;
+    }
+    .intro h2 {
+        font-size: 54px;
+    }   
+    .intro p {
+        font-size: 17px;
+    }  
+    .intro button {
+        width: 60%;
+    } 
+}
+
+@media (max-width: 1050px) {
+    .intro {
+        width: 50%;
+    }
+    .intro h2 {
+        font-size: 42px;
+    }   
+    .intro p {
+        font-size: 17px;
+    }   
+}
+
+@media (max-width: 850px) {
+    #home svg {
+        width: 80%;
+    }
+    .intro {
+        width: 70%;
+    }
+    .intro h2 {
+        font-size: 45px;
+    }   
+    .intro p {
+        font-size: 17px;
+    }   
+    /* .intro::before,
+    .intro::after {
+        display: none;
+    } */
+}
+
+@media (max-width: 650px) {
+    #home svg {
+        width: 100%;
+    }
+    .intro {
+        width: 80%;
+    }
+    .intro button {
+        width: 80%;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .intro h2 {
+        font-size: 30px;
+    }   
+    .intro p {
+        font-size: 12px;
+    }   
 }
