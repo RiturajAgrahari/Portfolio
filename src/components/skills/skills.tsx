@@ -9,7 +9,7 @@ const Skills = () => {
                     <div className="fl"></div>
                 </div>
                 <div className="skills-data">
-                    <div className="divide-three">
+                    {/* <div className="divide-three"> */}
 
                         <div className="language">
                             <h1>Languages</h1>
@@ -60,22 +60,10 @@ const Skills = () => {
                             </div>
                         </div>
 
-                    </div>
-                    <div className="divide-three">
+                    {/* </div> */}
+                    {/* <div className="divide-three"> */}
 
-                        <div className="ide">
-                            <h1>IDE</h1>
-                            <div className="skill-logos">
-                                <div className="logo">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="pycharm-logo" title="Pycharm"/>
-                                    <p>Pycharm</p>
-                                </div>
-                                <div className="logo">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vs-code-logo" title="VS Code"/>
-                                    <p>VS Code</p>
-                                </div>
-                            </div>
-                        </div>
+
                         <div className="frameworks">
                             <h1>Frameworks</h1>
                             <div className="skill-logos">
@@ -97,6 +85,19 @@ const Skills = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="ide">
+                            <h1>IDE</h1>
+                            <div className="skill-logos">
+                                <div className="logo">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="pycharm-logo" title="Pycharm"/>
+                                    <p>Pycharm</p>
+                                </div>
+                                <div className="logo">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vs-code-logo" title="VS Code"/>
+                                    <p>VS Code</p>
+                                </div>
+                            </div>
+                        </div>
                         <div className="extra">
                             <h1>Extra</h1>
                             <div className="skill-logos">
@@ -115,7 +116,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
         </div>

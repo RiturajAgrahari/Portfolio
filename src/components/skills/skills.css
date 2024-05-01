@@ -1,7 +1,8 @@
 #Skills {
     color: rgb(77, 188, 188);
     margin: 0 10%;
-    padding-top: 150px;
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 .skills .section-heading {
@@ -23,24 +24,17 @@
 }
 
 .skills .skills-data {
-    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-content: center;
 }
 
-.skills .skills-data .divide-three {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.skills .skills-data .dbms {
+    max-width: 200px; 
 }
 
-.skills .skills-data h1 {
-    text-align: center;
-}
-
-.skills .skills-data .divide-three > div {
+.skills .skills-data > div {
     border: 1px solid gray;
     background-color: rgb(43, 40, 40);
     padding: 20px;
@@ -51,14 +45,14 @@
     flex-direction: column;
 }
 
-.skills .skills-data .divide-three > div .skill-logos {
+.skills .skills-data > div .skill-logos {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.skills .skills-data .divide-three > div .skill-logos .logo{
+.skills .skills-data > div .skill-logos .logo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,12 +60,51 @@
     color: gray;
 }
 
-.skills .skills-data .divide-three img {
+.skills .skills-data img {
     width: 70px;
     margin: 10px;
     transition: 0.2s ease-in-out;
 }
 
-.skills .skills-data .divide-three img:hover {
+.skills .skills-data img:hover {
     transform: translateY(-5px);
+}
+
+@media (max-width: 1375px) {
+    .skills .skills-data .dbms {
+        max-width: 120px; 
+    }
+}
+
+@media (max-width: 1275px) {
+    .skills .skills-data img {
+        width: 40px;
+        margin: 10px;
+    }
+
+    .skills .skills-data >div h1 {
+        font-size: 24px;
+    }
+
+    .skills .skills-data > div .skill-logos .logo p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 750px) {
+    .skills .skills-data img {
+        width: 30px;
+        margin: 10px;
+    }
+
+    .skills .skills-data > div h1 {
+        font-size: 22px;
+    }
+
+    .skills .skills-data > div .skill-logos .logo p{
+        font-size: 10px;
+    }
+    .skills .skills-data .dbms {
+        max-width: 60px; 
+    }
 }
