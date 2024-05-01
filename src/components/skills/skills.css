@@ -108,3 +108,12 @@
         max-width: 60px; 
     }
 }
+
+@media (max-width: 650px) {
+    .skills .skills-data {
+        display: block;
+    }
+    .skills .skills-data .dbms {
+        max-width: 100%; 
+    }
+}
