@@ -116,4 +116,7 @@
     .skills .skills-data .dbms {
         max-width: 100%; 
     }
+    #Skills {
+        margin: 0 3%;
+    }
 }
