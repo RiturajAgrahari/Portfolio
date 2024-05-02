@@ -45,7 +45,7 @@ const Navbar = () => {
                     <li className={activeLink === 2 ? 'active' : ''} onClick={() => {HandleClick(2,"Experience")}}>Experience</li>
                     <li className={activeLink === 3 ? 'active' : ''} onClick={() => {HandleClick(3,"Testimonial")}}>Testimonials</li>
                     <li className={activeLink === 4 ? 'active' : ''} onClick={() => {HandleClick(4,"Projects")}}>Projects</li>
-                    <li className={activeLink === 5 ? 'active' : ''} onClick={() => {HandleClick(5,"Projects")}}>Contact</li>
+                    <li className={activeLink === 5 ? 'active' : ''} onClick={() => {HandleClick(5,"Contact")}}>Contact</li>
                 </div>
                 <div className="social-media">
                     <a href="https://github.com/RiturajAgrahari" target="_blank">

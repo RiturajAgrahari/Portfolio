@@ -5,12 +5,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    width: 84%;
+    margin: 0 8%;
 }
 
 .project-header {
-    width: 84%;
-    margin: 0 8%;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .project-header .section-heading {
@@ -37,8 +38,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 8%;
-    width: 84%;
 }
 
 .projects .project {
@@ -55,6 +54,11 @@
     margin: 5px;
     border-radius: 10px;
     height: 250px;
+    transition: 0.3s ease-in-out;
+}
+
+.projects .project .project-thumbnail:hover {
+    transform: translateY(-10px);
 }
 
 .projects .project .project-thumbnail img {

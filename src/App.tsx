@@ -1,4 +1,5 @@
 import './App.css'
+import Contact from './components/contact/contact'
 import Experience from './components/experience/experience'
 import Home from './components/home/home'
 import Navbar from './components/navbar/navbar'
@@ -17,6 +18,7 @@ function App() {
       <Experience></Experience>
       <Testimonial></Testimonial>
       <Projects></Projects>
+      <Contact></Contact>
       <MainPage></MainPage>
     </>
   )
