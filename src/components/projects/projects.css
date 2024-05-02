@@ -123,3 +123,12 @@
     color: white;   
     font-size: 14px;
 }
+
+@media (max-width: 550px) {
+    .projects .project {
+        width: 300px;
+    }
+    .projects .project .project-thumbnail {
+        height: 200px;
+    }
+}
