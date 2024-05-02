@@ -3,7 +3,6 @@ import Contact from './components/contact/contact'
 import Experience from './components/experience/experience'
 import Home from './components/home/home'
 import Navbar from './components/navbar/navbar'
-import MainPage from './components/portfolio/portfolio'
 import Projects from './components/projects/projects'
 import Skills from './components/skills/skills'
 import Testimonial from './components/testimonials/testimonial'
@@ -19,7 +18,6 @@ function App() {
       <Testimonial></Testimonial>
       <Projects></Projects>
       <Contact></Contact>
-      <MainPage></MainPage>
     </>
   )
 }

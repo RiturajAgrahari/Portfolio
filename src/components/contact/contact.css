@@ -21,13 +21,11 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding-left: 10%;
 }
 
 .disco {
     position: absolute;
     left: calc(50% - 150px);
-    margin-right: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +86,7 @@
 }
 
 .contact-form input {
-    width: 80%;
+    width: 70%;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     border-radius: 50px;
@@ -117,7 +115,7 @@
 }
 
 .contact-form .textAria {
-    width: 80%;
+    width: 70%;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     border-radius: 50px;
@@ -151,5 +149,23 @@
     border-right: 10px solid green;
     padding: 20px 100px;
     transition: 0.5s;
+}
+
+@media (max-width: 550px) {
+    .disco {
+        left: calc(50% - 100px);
+        width: 200px;
+        height: 200px;
+    }
+    
+    .disco::before {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .disco::after {
+        width: 200px;
+        height: 200px;
+    }
 }
   

@@ -215,5 +215,20 @@ body {
     }
     .btn {
         padding-left: 0;
+        padding-right: 0;
+
+    }
+    .navbar .logo {
+        font-size: 28px;
+        margin-left: 5px;
+    }
+
+    .navbar .social-media a svg{
+        width: 25px;
+        height: 25px;
+    }
+    .lines,.lines::after,.lines::before {
+        width: 25px;
+        height: 3px;
     }
 }
