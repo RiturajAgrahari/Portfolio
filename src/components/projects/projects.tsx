@@ -1,84 +1,168 @@
 import "./projects.css"
-import { useRef, useState } from "react";
-import weather_app from "../../static/project1.jpg"
-import money_management_app from "../../static/project3.jpg"
+import { useRef } from "react";
+import weather_app from "../../static/project01.png"
+import money_management_app from "../../static/project02.png"
+import teot from "../../static/project03.png"
+import portfolio from "../../static/project04.png"
+import bots from "../../static/project05.png"
+import ab_fandom from "../../static/project06.png"
 
 
 const Projects = () => {
 
-    const nextProject = useRef<string>("next")
-    const previousProject = useRef<string>("previous")
-
-    const projectImages = [weather_app, money_management_app]
-    const projectTitles = ["Weather App", "Money Management App"]
-    const projectDescriptions = [
-        "Introducing Django Weather app, where you can check or compare weather of 2 cities. It shows 7 consequent days weather report. You can also toggle between light and dark mode as per your convenience.",
-        "Introducing One of my learning project where i made an money management app where you can write your journal of you income and expenses in your own currenncy and manage your data easily"
-    ]
-    const projectSkills = ["HTML, CSS, Js, Django", "Django, HTML, CSS, Bootstrap, Js, Mysql"]
-    const projectContributions = [
-        [
-            "I created the whole backend by myself using Django web framework.",
-            "I used HTML, CSS, and bit of Js to design the frontend with theme toggle option.",
-            "I used My Weather.org API to extract the data"
-        ],
-        [
-            "I created the whole backend by myself using Django web framework.",
-            "I used Bootstrap to design the frontend.",
-            "I managed the data in Mysql rdbms"
-        ]
-    ]
-
-
-    const HandleProjectNavigation = (index: number, ref: React.RefObject<string>) => {
-        if (index <= projectImages.length - 2 && ref.current == "next") {
-            setProjectIndex(index + 1)
-        } else if (index > 0 && ref.current == "previous") {
-            setProjectIndex(index - 1)
-        }
-    }
-
-
     const ProjectSection: React.RefObject<HTMLDivElement> = useRef(null);
-    const [projectIndex, setProjectIndex] = useState(0)
 
     return (
-        <div id="Projects" ref={ProjectSection}>      
-            <h1>PROJECTS</h1>
+        <div id="Projects" ref={ProjectSection}>   
+        <div className="project-header">
+            <div className="section-heading">
+                    <div><h1>Projects</h1></div>
+                    <div className="fl"></div>
+            </div>
+        </div>   
             <div className="projects">
-                <div className="previous-project" onClick={() => {HandleProjectNavigation(projectIndex, previousProject)}}>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M453-241 213-481l240-240 42 42-198 198 198 198-42 42Zm253 0L466-481l240-240 42 42-198 198 198 198-42 42Z"/></svg>                    
-                </div>
+
                 <div className="project">
-                    <div className="project-intro">
-                        <img src={projectImages[projectIndex]} alt="weather_app" />
-                    </div>
-                    <div className="project-description">
-                        <h1>{projectTitles[projectIndex]}</h1>
-                        <p>
-                            {projectDescriptions[projectIndex]}
-                        </p>
-                        <div className="project-data">
-                            <div className="tech-used">
-                                <h3>Tech Used :</h3>
-                                <p>{projectSkills[projectIndex]}</p>
+                    <a href="https://vercel-django-weather-app.vercel.app/" target="_blank" className="project-thumbnail">
+                        <img src={weather_app} alt="weather_app" />
+                    </a>
+                    <div className="project-content">
+                        <div className="project-title">
+                            <h2>Weather App</h2>
+                            <div className="project-hyperlinks">
+                                <a href="https://vercel-django-weather-app.vercel.app/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg></a>
+                                <a href="https://github.com/RiturajAgrahari/Django-WeatherApp" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
                             </div>
-                            <div className="key-features">
-                                <h3>What i did ?</h3>
-                                <li>{projectContributions[projectIndex][0]}</li>
-                                <li>{projectContributions[projectIndex][1]}</li>
-                                <li>{projectContributions[projectIndex][2]}</li>
-                            </div>
-                            <div className="project-links">
-                                <a href="">Github</a>
-                                <a href="">URL</a>
-                            </div>
+                        </div>
+                        <div className="project-description">
+                            <p>You can use this to check 5 consecutive days weather report or compare it between 2 cities</p>
+                        </div>
+                        <div className="project-skills">
+                            <p className="project-skill">HTML</p>
+                            <p className="project-skill">CSS</p>
+                            <p className="project-skill">DJANGO</p>
+                            <p className="project-skill">API</p>
                         </div>
                     </div>
                 </div>
-                <div className="next-project" onClick={() => {HandleProjectNavigation(projectIndex, nextProject)}}>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M411-481 213-679l42-42 240 240-240 240-42-42 198-198Zm253 0L466-679l42-42 240 240-240 240-42-42 198-198Z"/></svg>
+                <div className="project">
+                    <a href="https://vercel-django-money-management-web-app.vercel.app/authentication/login/" target="_blank" className="project-thumbnail">
+                        <img src={money_management_app} alt="weather_app" />
+                    </a>
+                    <div className="project-content">
+                        <div className="project-title">
+                            <h2>Money Management</h2>
+                            <div className="project-hyperlinks">
+                                <a href="https://vercel-django-money-management-web-app.vercel.app/authentication/login/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg></a>
+                                <a href="https://github.com/RiturajAgrahari/Django-Money-Management-App" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+                            </div>
+                        </div>
+                        <div className="project-description">
+                            <p>Manage you Income and Expense and find the caches and save money</p>
+                        </div>
+                        <div className="project-skills">
+                            <p className="project-skill">HTML</p>
+                            <p className="project-skill">CSS</p>
+                            <p className="project-skill">DJANGO</p>
+                            <p className="project-skill">BOOTSTRAP</p>
+                            <p className="project-skill">MYSQL</p>
+                        </div>
+                    </div>
                 </div>
+                <div className="project">
+                    <a href="https://vercel-react-teot.vercel.app/" target="_blank" className="project-thumbnail">
+                        <img src={teot} alt="weather_app" />
+                    </a>
+                    <div className="project-content">
+                        <div className="project-title">
+                            <h2>The End Of Time</h2>
+                            <div className="project-hyperlinks">
+                                <a href="https://vercel-react-teot.vercel.app/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg></a>
+                                <a href="https://github.com/RiturajAgrahari/Django-Money-Management-App" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+                            </div>
+                        </div>
+                        <div className="project-description">
+                            <p>Official webiste of the game The End Of Time, Don't forget to pre register if you are a survival game lover</p>
+                        </div>
+                        <div className="project-skills">
+                            <p className="project-skill">HTML</p>
+                            <p className="project-skill">CSS</p>
+                            <p className="project-skill">DJANGO</p>
+                            <p className="project-skill">REACT</p>
+                            <p className="project-skill">DRF</p>
+                            <p className="project-skill">VITE</p>
+                            <p className="project-skill">MYSQL</p>
+                            <p className="project-skill">LINUX</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="project">
+                    <a href="https://vercel-react-teot.vercel.app/" target="_blank" className="project-thumbnail">
+                        <img src={portfolio} alt="weather_app" />
+                    </a>
+                    <div className="project-content">
+                        <div className="project-title">
+                            <h2>My Portfolio</h2>
+                            <div className="project-hyperlinks">
+                                <a href="https://vercel-react-teot.vercel.app/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg></a>
+                                <a href="https://github.com/RiturajAgrahari/Django-Money-Management-App" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+                            </div>
+                        </div>
+                        <div className="project-description">
+                            <p>I designed my whole portfolio by myself..! </p>
+                        </div>
+                        <div className="project-skills">
+                            <p className="project-skill">HTML</p>
+                            <p className="project-skill">CSS</p>
+                            <p className="project-skill">REACT</p>
+                            <p className="project-skill">VITE</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="project">
+                    <a target="_blank" className="project-thumbnail">
+                        <img src={bots} alt="weather_app" />
+                    </a>
+                    <div className="project-content">
+                        <div className="project-title">
+                            <h2>Discord Bots</h2>
+                            <div className="project-hyperlinks">
+                                <a href="https://github.com/RiturajAgrahari?tab=repositories&q=Discord.py&type=&language=&sort=" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+                            </div>
+                        </div>
+                        <div className="project-description">
+                            <p>I had created a lot of discord bots, some for personal uses and some for companies.</p>
+                        </div>
+                        <div className="project-skills">
+                            <p className="project-skill">PYTHON</p>
+                            <p className="project-skill">DISCORD.PY</p>
+                            <p className="project-skill">MATPLOTLIB</p>
+                            <p className="project-skill">FANDOM.PY</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="project">
+                    <a href="https://arena-breakout.fandom.com/wiki/Arena_Breakout_Wiki" target="_blank" className="project-thumbnail">
+                        <img src={ab_fandom} alt="weather_app" />
+                    </a>
+                    <div className="project-content">
+                        <div className="project-title">
+                            <h2>Arena Breakout Fandom</h2>
+                            <div className="project-hyperlinks">
+                                <a href="https://arena-breakout.fandom.com/wiki/Arena_Breakout_Wiki" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg></a>
+                            </div>
+                        </div>
+                        <div className="project-description">
+                            <p>I had created the fandom wiki on mediawiki platform of the game arena breakout by morefun studios which is a tencent studio</p>
+                        </div>
+                        <div className="project-skills">
+                            <p className="project-skill">HTML</p>
+                            <p className="project-skill">CSS</p>
+                            <p className="project-skill">WIKIA</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
