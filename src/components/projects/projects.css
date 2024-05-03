@@ -131,4 +131,8 @@
     .projects .project .project-thumbnail {
         height: 200px;
     }
+
+    #Projects {
+        margin: 0 3%;
+    }
 }
