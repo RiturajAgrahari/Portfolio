@@ -28,13 +28,13 @@ const Contact = () => {
                 throw new Error("failed to send data!"); 
             } else {
                 const responseData = await response.json();
+                console.log(responseData)
                 setPopupMessage(responseData.message)
                 setShowPopup(true)
                 setTimeout(function(){
                     setShowPopup(false)
                 }, 5000);
             }
-            console.log(response)
         } catch (error) {
             console.error("error sending data", error);
         }
