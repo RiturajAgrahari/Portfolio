@@ -142,4 +142,9 @@
     .intro p {
         font-size: 12px;
     }   
+    .intro::before,
+    .intro::after {
+        width: 25.125rem;
+        height: 25.125rem;
+}
 }
