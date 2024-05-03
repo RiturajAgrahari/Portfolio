@@ -69,7 +69,7 @@ const Navbar = () => {
                         <li onClick={() => {HandleClick(2,"Experience")}}>Experience</li>
                         <li onClick={() => {HandleClick(3,"Testimonial")}}>Testimonials</li>
                         <li onClick={() => {HandleClick(4,"Projects")}}>Projects</li>
-                        <li onClick={() => {HandleClick(5,"Projects")}}>Contact</li>
+                        <li onClick={() => {HandleClick(5,"Contact")}}>Contact</li>
                     </ul>
                 </div>
             </div>
