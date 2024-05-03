@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import "./contact.css"
 
 const Contact = () => {
@@ -8,6 +8,7 @@ const Contact = () => {
     const [message, setMessage] = useState('')
     const [popupMessage, setPopupMessage] = useState("")
     const [showPopup, setShowPopup] = useState(false)
+    const form = useRef<HTMLFormElement>(null);
 
     const send_me_mail = async(event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -34,6 +35,7 @@ const Contact = () => {
                 setTimeout(function(){
                     setShowPopup(false)
                 }, 5000);
+                form.current?.reset();
             }
         } catch (error) {
             console.error("error sending data", error);
@@ -49,7 +51,7 @@ const Contact = () => {
                 </div>
             </div>  
             <div className="contact">
-                <form className="contact-form" onSubmit={send_me_mail}>
+                <form ref={form} className="contact-form" onSubmit={send_me_mail}>
                     <label>Your Subject</label>
                     <input type="text" name="subject" placeholder="Subject" autoComplete="off" onChange={(event) => setSubject(event.target.value)} required/>
                     <label>Your Email</label>
@@ -64,6 +66,10 @@ const Contact = () => {
                 <div className="contact-response" style={{transform: showPopup ? "translateX(0)": "translateX(100px)", visibility: showPopup ? "visible": "hidden", opacity: showPopup ? "1" : "0"}}>
                     {popupMessage}
                 </div>
+                </div>
+            <div className="footer">
+                <p>Made by Rituraj</p>
+                <p>Made with React + Vite</p>
             </div>
         </div>
     )
