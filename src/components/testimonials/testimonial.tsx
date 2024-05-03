@@ -44,7 +44,7 @@ const Testimonial = () => {
                     <div className="review">
                         <p>"</p>
                         <div className="review-content">
-                            <p className="review-text-content">Review 3..!</p>
+                            <p className="review-text-content">He stood out from numerous interviewees, and it turned out our choice was correct. He independently completed the construction of the entire MISSION EVO Fandom wiki page and made significant contributions to the subsequent multilingual region work. He always finds better presentation methods to help players use the wiki better and optimizes feedback and suggestions from players. In this field, he is undoubtedly a worthy community quality worker.</p>
                             <div className="review-user">
                                 <div className="review-user-info">
                                     <div className="review-user-name">
