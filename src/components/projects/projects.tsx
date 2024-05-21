@@ -24,7 +24,7 @@ const Projects = () => {
         </div>   
             <div className="projects">
 
-                <div className="project">
+                {/* <div className="project">
                     <a href="https://vercel-react-teot.vercel.app/" target="_blank" className="project-thumbnail">
                         <img src={teot} alt="weather_app" />
                     </a>
@@ -50,7 +50,7 @@ const Projects = () => {
                             <p className="project-skill">LINUX</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="project">
                     <a href="https://vercel-django-weather-app.vercel.app/" target="_blank" className="project-thumbnail">
                         <img src={weather_app} alt="weather_app" />
