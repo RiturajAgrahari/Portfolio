@@ -2,7 +2,7 @@ import "./projects.css"
 import { useRef } from "react";
 import weather_app from "../../static/project01.png"
 import money_management_app from "../../static/project02.png"
-import teot from "../../static/project03.png"
+// import teot from "../../static/project03.png"
 import portfolio from "../../static/project04.png"
 import bots from "../../static/project05.png"
 import ab_fandom from "../../static/project06.png"
