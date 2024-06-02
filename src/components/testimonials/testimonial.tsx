@@ -9,7 +9,7 @@ const Testimonial = () => {
                     <div className="fl"></div>
                 </div>
                 <div className="testimonials">
-                    <div className="review">
+                    {/* <div className="review">
                         <p>"</p>
                         <div className="review-content">
                             <p className="review-text-content">Review 1..!</p>
@@ -24,7 +24,7 @@ const Testimonial = () => {
                                 <span><div><img src="https://cdn.discordapp.com/avatars/307679452383412235/be15d671a2748ff93f6aadda5a90747b?size=1024" alt="Abbie Hoffman" /></div></span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="review">
                         <p>"</p>
                         <div className="review-content">
