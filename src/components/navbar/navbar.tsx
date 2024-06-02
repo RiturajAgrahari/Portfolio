@@ -37,7 +37,7 @@ const Navbar = () => {
     return (
             <div className="navbar">
                 <div className="logo">
-                    My Portfolio
+                    Rituraj
                 </div>
                 <div className="nav-links">
                     <li className={activeLink === 0 ? 'active' : ''} onClick={() => {HandleClick(0,"home")}}>Home</li>
