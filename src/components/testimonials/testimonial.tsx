@@ -1,4 +1,5 @@
 import "./testimonial.css"
+import risma from "../../static/risma.jpg"
 
 const Testimonial = () => {
     return (
@@ -38,7 +39,7 @@ I would recommend Rituraj to become your best work partner.</p>
                                     </div>
                                     <p className="review-user-post">Senior Manager of Arena Breakout</p>
                                 </div>
-                                <span><div><img src="https://cdn.discordapp.com/avatars/1018809101284810783/0ddf003bfae93a938216eaf1eabdfe4a?size=1024" alt="Vivi" /></div></span>
+                                <span><div><img src={risma} alt="Risma" /></div></span>
                             </div>
                         </div>
                     </div>
