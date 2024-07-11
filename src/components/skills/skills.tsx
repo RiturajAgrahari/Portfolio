@@ -27,10 +27,6 @@ const Skills = () => {
                                     <p>CSS</p>
                                 </div>
                                 <div className="logo">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js-logo" title="Javascript"/>
-                                    <p>Javascript</p>
-                                </div>
-                                <div className="logo">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="ts-logo" title="Typescript"/>
                                     <p>Typescript</p>
                                 </div>
@@ -81,7 +77,11 @@ const Skills = () => {
                                 </div>
                                 <div className="logo">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/djangorest/djangorest-original.svg" alt="django-rest-logo" title="Django Rest FrameWork"/>
-                                    <p>Django Rest</p>
+                                    <p>DRF</p>
+                                </div>
+                                <div className="logo">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="matplotlib-logo" title="Matplotlib" />
+                                    <p>Matplotlib</p>
                                 </div>
                             </div>
                         </div>
@@ -112,6 +112,14 @@ const Skills = () => {
                                 <div className="logo">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="nginx-logo" title="Nginx"/>
                                     <p>Nginx</p>
+                                </div>
+                                <div className="logo">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="blender-logo" title="Blender"/>
+                                    <p>Blender</p>
+                                </div>
+                                <div className="logo">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" alt="gimp-logo" title="Gimp"/>
+                                    <p>Gimp</p>
                                 </div>
                             </div>
                         </div>

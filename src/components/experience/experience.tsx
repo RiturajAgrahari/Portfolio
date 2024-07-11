@@ -1,5 +1,6 @@
 import "./experience.css"
 import teot from "../../static/teot.png"
+import aoem from "../../static/aoem.png"
 
 const Experience = () => {
     return (
@@ -18,10 +19,11 @@ const Experience = () => {
                         </span>
                         <div className="work-details">
                             <div className="arrow"></div>
-                            <div className="work-header"><h3>Full stack Web Developer</h3><p>The End Of Time</p></div>
+                            <div className="work-header"><h3>Full stack Web Developer / SysAdmin</h3><p>The End Of Time - Escape Studios</p></div>
                             <ul>
                                 <li>I lead the development of a new game's fully functional website from scratch.</li>
                                 <li>Leveraging Vite + React.ts for frontend, Django for backend and Django Rest Framework for API, and MySQL for RDBMS.</li>
+                                <li>I oversee the website's hosting, dedicated server management, and game server administration.</li>
                                 <li>The project is currently in development with plans to host it on a Linux-based VPS.</li>
                             </ul>
                             <span>Februray 2024 - Present</span>
@@ -35,14 +37,32 @@ const Experience = () => {
                         </span>
                         <div className="work-details">
                             <div className="arrow"></div>
-                            <div className="work-header"><h3>Discord Bot Developer</h3><p>Arena Breakout - MoreFun Studios (by Tencent)</p></div>
+                            <div className="work-header"><h3>Discord Bot Developer / Web Developer</h3><p>Arena Breakout - MoreFun Studios (by Tencent)</p></div>
                             <ul>
                                 <li>I focus on automating and interlinking fandom wikis while implementing game-related content to drive strategic marketing initiatives aimed at expanding the player base.</li>
                                 <li>Utilizing Python, MySQL for database management, Libraries such as  MatplotLib, Discord.py and Fandom.py, and Linux for VPS hosting.</li>
+                                <li>I'm responsible for developing a comprehensive website that enables users to oversee, manage, control, and analyze the bot's functionality.</li>
                                 <li>I oversee the development, end-to-end testing, and bug fixes for the bots.</li>
                             </ul>
                             <span>September 2023 - Present</span>
                         </div>
+                    </div>
+                    <div className="work">
+                        <span>
+                            <div>
+                                <img src={aoem} alt="age of empires mobile" />
+                            </div>
+                        </span>
+                        <div className="work-details">
+                            <div className="arrow"></div>
+                            <div className="work-header"><h3>Fandom Wiki Editor</h3><p>Age of Empires Mobile - Timi Studios (by Tencent)</p></div>
+                            <ul>
+                                <li>I've been tasked with building and maintaining the game's fandom wiki.</li>
+                                <li>Using HTML, CSS, and Wikia on the Fandom platform, I've created and curated pages while integrating Facebook, X, and Discord widgets to enhance user engagement and accessibility.</li>
+                            </ul>
+                            <span>June 2024 - July 2024</span>
+                        </div>
+                        
                     </div>
                     <div className="work">
                         <span>
@@ -59,6 +79,7 @@ const Experience = () => {
                             </ul>
                             <span>May 2023 - Present</span>
                         </div>
+                        
                     </div>
                         <div className="work">
                         <span>

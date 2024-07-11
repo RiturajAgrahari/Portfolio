@@ -8,6 +8,7 @@ import bots from "../../static/project05.png"
 import ab_fandom from "../../static/project06.png"
 import crud_app from "../../static/project07.png"
 import me_fandom from "../../static/project08.png"
+import aoem from "../../static/project09.png"
 
 
 const Projects = () => {
@@ -23,34 +24,27 @@ const Projects = () => {
             </div>
         </div>   
             <div className="projects">
-
-                {/* <div className="project">
-                    <a href="https://vercel-react-teot.vercel.app/" target="_blank" className="project-thumbnail">
-                        <img src={teot} alt="weather_app" />
+                <div className="project">
+                    <a href="https://age-of-empires-mobile.fandom.com/wiki/Age_of_Empires_Mobile_Wiki" target="_blank" className="project-thumbnail">
+                        <img src={aoem} alt="weather_app" />
                     </a>
                     <div className="project-content">
                         <div className="project-title">
-                            <h2>The End Of Time</h2>
+                            <h2>Age Of Empire Mobile Fandom</h2>
                             <div className="project-hyperlinks">
-                                <a href="https://vercel-react-teot.vercel.app/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg></a>
-                                <a href="https://github.com/RiturajAgrahari/Django-Money-Management-App" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+                                <a href="https://age-of-empires-mobile.fandom.com/wiki/Age_of_Empires_Mobile_Wiki" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg></a>
                             </div>
                         </div>
                         <div className="project-description">
-                            <p>Official webiste of the game The End Of Time, Don't forget to pre register if you are a survival game lover</p>
+                            <p>I had created the fandom wiki on mediawiki platform of the game age of empires mobile by timi studios which is a tencent studio</p>
                         </div>
                         <div className="project-skills">
                             <p className="project-skill">HTML</p>
                             <p className="project-skill">CSS</p>
-                            <p className="project-skill">DJANGO</p>
-                            <p className="project-skill">REACT</p>
-                            <p className="project-skill">DRF</p>
-                            <p className="project-skill">VITE</p>
-                            <p className="project-skill">MYSQL</p>
-                            <p className="project-skill">LINUX</p>
+                            <p className="project-skill">WIKIA</p>
                         </div>
                     </div>
-                </div> */}
+                </div>
                 <div className="project">
                     <a href="https://vercel-django-weather-app.vercel.app/" target="_blank" className="project-thumbnail">
                         <img src={weather_app} alt="weather_app" />

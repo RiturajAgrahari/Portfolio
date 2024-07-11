@@ -7,21 +7,17 @@ const Home = () => {
             <div className="intro">
                 <h2>I'm Rituraj Agrahari,</h2>
                 <p>
-                I am a dedicated learner with a passion for
-                web development, constantly striving to
-                innovate and create aesthetically pleasing and
-                dynamic frontend designs. With a keen eye
-                for detail and a commitment to perfection, I
-                consistently aim to surpass expectations in
-                every project I undertake. Proficient in
-                HTML/CSS, JavaScript, and React, I leverage
-                my skills to craft engaging user experiences
-                that exceed performance metrics. I am driven
-                by the desire to continuously enrich my
-                knowledge in web development, aspiring to
-                become a leader in the field through ongoing
-                learning and innovative contributions.
-
+                The most rewarding aspect of being a web developer for me 
+                is the ability to design visually appealing frontends and 
+                build robust backend APIs from scratch. I'm proficient in 
+                handling complex API functionalities, including authentication
+                , filters, and pagination. I can also seamlessly integrate 
+                these APIs with MySQL databases and leverage my sysadmin 
+                skills to host them on my own Linux servers. In addition 
+                to web development, I'm passionate about creating Discord 
+                bots and contributing to fandom wikis for major game 
+                companies. My ability to combine creativity with hard 
+                work fuels my passion for this field.
                 </p>
                 <a href={resume} download="Rituraj_Resume" target='_blank'>
                     <button>My Resume</button>
