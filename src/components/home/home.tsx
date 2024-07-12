@@ -1,5 +1,4 @@
 import "./home.css"
-import resume from "../../static/Rituraj.pdf"
 
 const Home = () => {
 
