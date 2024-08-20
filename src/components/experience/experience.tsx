@@ -14,6 +14,22 @@ const Experience = () => {
                     <div className="work">
                         <span>
                             <div>
+                                <img src={aoem} alt="age of empires mobile" />
+                            </div>
+                        </span>
+                        <div className="work-details">
+                            <div className="arrow"></div>
+                            <div className="work-header"><h3>Fandom Wiki Editor</h3><p>Age of Empires Mobile - Timi Studios (by Tencent)</p></div>
+                            <ul>
+                                <li>I've been tasked with building and maintaining the game's fandom wiki.</li>
+                                <li>Using HTML, CSS, and Wikia on the Fandom platform, I've created and curated pages while integrating Facebook, X, and Discord widgets to enhance user engagement and accessibility.</li>
+                            </ul>
+                            <span>June 2024 - Present</span>
+                        </div>
+                    </div>
+                    <div className="work">
+                        <span>
+                            <div>
                                 <img src={teot} alt="mission evo" />
                             </div>
                         </span>
@@ -23,8 +39,7 @@ const Experience = () => {
                             <ul>
                                 <li>I lead the development of a new game's fully functional website from scratch.</li>
                                 <li>Leveraging Vite + React.ts for frontend, Django for backend and Django Rest Framework for API, and MySQL for RDBMS.</li>
-                                <li>I oversee the website's hosting, dedicated server management, and game server administration.</li>
-                                <li>The project is currently in development with plans to host it on a Linux-based VPS.</li>
+                                <li>Developed a Linux server manager capable of automating game server deployment. The tool handles the entire process, including file upload, extraction, permission configuration, server initiation, and real-time console output monitoring.</li>
                             </ul>
                             <span>Februray 2024 - Present</span>
                         </div>
@@ -46,23 +61,6 @@ const Experience = () => {
                             </ul>
                             <span>September 2023 - Present</span>
                         </div>
-                    </div>
-                    <div className="work">
-                        <span>
-                            <div>
-                                <img src={aoem} alt="age of empires mobile" />
-                            </div>
-                        </span>
-                        <div className="work-details">
-                            <div className="arrow"></div>
-                            <div className="work-header"><h3>Fandom Wiki Editor</h3><p>Age of Empires Mobile - Timi Studios (by Tencent)</p></div>
-                            <ul>
-                                <li>I've been tasked with building and maintaining the game's fandom wiki.</li>
-                                <li>Using HTML, CSS, and Wikia on the Fandom platform, I've created and curated pages while integrating Facebook, X, and Discord widgets to enhance user engagement and accessibility.</li>
-                            </ul>
-                            <span>June 2024 - July 2024</span>
-                        </div>
-                        
                     </div>
                     <div className="work">
                         <span>

@@ -3,7 +3,7 @@ import "./home.css"
 const Home = () => {
 
     function startDownload() {
-        window.location.href = "https://drive.google.com/file/d/1tUJT5Gk7ohjrqXXtrR-Qlu8y6bNCx3T1/view?usp=sharing"
+        window.open("https://drive.google.com/file/d/1Y4vi8J-yErEyxRHB0y4w8deLNk84lswd/view?usp=sharing", "_blank")
     }
 
     return (
@@ -23,7 +23,7 @@ const Home = () => {
                 companies. My ability to combine creativity with hard 
                 work fuels my passion for this field.
                 </p>
-                <a href="https://drive.google.com/file/d/1tUJT5Gk7ohjrqXXtrR-Qlu8y6bNCx3T1/view?usp=sharing" target='_blank' onClick={startDownload}>
+                <a href="https://drive.google.com/file/d/1Y4vi8J-yErEyxRHB0y4w8deLNk84lswd/view?usp=sharing" target='_blank' onClick={startDownload}>
                     My Resume
                 </a>
             </div>

@@ -125,6 +125,10 @@ const Skills = () => {
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" alt="gimp-logo" title="Gimp"/>
                                     <p>Gimp</p>
                                 </div>
+                                <div className="logo">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="docker-logo" title="Docker"/>
+                                    <p>Docker</p>
+                                </div>
                             </div>
                         </div>
 
